@@ -1,3 +1,3 @@
 # helloword
-anewrepository
+a new repository
 hello my name is zhengyongjie.
