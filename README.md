@@ -1,3 +1,3 @@
 # helloword
 a new repository
-hello my name is zhengyongjie.
+hello welcome to my Github.
