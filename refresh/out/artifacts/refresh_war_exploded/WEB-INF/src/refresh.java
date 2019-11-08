@@ -10,10 +10,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 @WebServlet("/refresh")
-
 public class refresh extends HttpServlet {
 
-    public void deGet(HttpServletRequest request,
+    public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
         throws SecurityException, IOException{
         response.setIntHeader("refresh", 5);
@@ -34,9 +33,10 @@ public class refresh extends HttpServlet {
                 "<p>当前时间是：" + nowTime + "</p>\n");
     }
 
-    public void doPost(HttpServletResponse response,
-                       HttpServletRequest request)
-        throws ServletException,IOException{
+    // 处理 POST 方法请求的方法
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
+            throws ServletException, IOException {
         doGet(request, response);
     }
 
