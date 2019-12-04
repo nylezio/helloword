@@ -19,6 +19,7 @@ public class refresh extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         Calendar calendar = Calendar.getInstance();
         Date tasktime = calendar.getTime();
+
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String nowTime = df.format(tasktime);
         PrintWriter out = response.getWriter();
